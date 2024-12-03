@@ -2,6 +2,7 @@ import torch
 import torchaudio
 from typing import Callable, List
 import warnings
+from memory_profiler import profile
 
 languages = ['ru', 'en', 'de', 'es']
 
