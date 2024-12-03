@@ -187,8 +187,8 @@ def make_visualization(probs, step):
                  ylabel='speech probability',
                  colormap='tab20')
 
-@profile
 @torch.no_grad()
+@profile
 def get_speech_timestamps(audio: torch.Tensor,
                           model,
                           threshold: float = 0.5,
